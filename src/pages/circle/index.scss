@@ -1,0 +1,94 @@
+.circle-cover {
+  background: #153f34;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.circle-edition {
+  display: block;
+  color: #ff9b80;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.circle-cover .title {
+  display: block;
+  margin: 18px 0;
+}
+.circle-cover .summary {
+  display: block;
+  color: #bdd0c8;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.circle-cover button {
+  margin: 0;
+  width: 190px;
+}
+.topics {
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+.topic-head {
+  margin-bottom: 24px;
+}
+.topic-head button {
+  margin: 0;
+  width: 190px;
+}
+.topic {
+  padding: 28px;
+  margin-bottom: 18px;
+}
+.topic-title {
+  display: block;
+  font-family: "Songti SC", serif;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 18px 0 10px;
+}
+.topic-content {
+  display: block;
+  color: #64766e;
+  line-height: 1.65;
+}
+.topic-foot {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e3e9e5;
+  color: #89958f;
+  font-size: 19px;
+}
+.composer-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 29, 23, 0.7);
+  display: flex;
+  align-items: flex-end;
+  z-index: 20;
+}
+.composer {
+  width: 100%;
+  background: #f7faf6;
+  border-radius: 26px 26px 0 0;
+  padding: 36px 30px 70px;
+}
+.composer .field {
+  background: #fff;
+  border: 1px solid #d5dfd9;
+  padding: 20px;
+  margin-top: 20px;
+}
+.composer .textarea {
+  height: 240px;
+  box-sizing: border-box;
+}
+.composer .row {
+  gap: 15px;
+  margin-top: 25px;
+}
+.composer button {
+  flex: 1;
+}
+
+.circle-cover{background:#12324a}.circle-edition{color:#f1c66d;font-family:"Arial Narrow",Arial,sans-serif;font-weight:800}.circle-cover .summary{color:#b9cad2}.topic{border-radius:20px}.topic-title{font-family:"STKaiti","KaiTi",serif;font-weight:700}.topic-content{color:#647780}.topic-foot{border-color:#e1e8ea;color:#85949b}.composer-mask{background:rgba(8,29,44,.72)}.composer{background:#f8f7f2}.composer .field{border-color:#cedadd;border-radius:14px}

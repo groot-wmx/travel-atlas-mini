@@ -1,0 +1,71 @@
+.circles-hero {
+  background: #e7efe9;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.circles-hero .title {
+  display: block;
+  margin: 20px 0 14px;
+}
+.search {
+  height: 85px;
+  margin-top: 30px;
+  background: #fff;
+  border: 1px solid #cedbd3;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 22px;
+}
+.search input {
+  flex: 1;
+}
+.circle-list {
+  padding-top: 28px;
+  padding-bottom: 80px;
+}
+.circle-card {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+  margin-bottom: 18px;
+}
+.circle-number {
+  align-self: stretch;
+  width: 84px;
+  margin-right: 20px;
+  border-right: 1px solid #dbe4de;
+  color: #e86445;
+  font-family: Georgia, serif;
+  font-size: 42px;
+}
+.circle-copy {
+  flex: 1;
+}
+.circle-name {
+  display: block;
+  font-family: "Songti SC", serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+.circle-city {
+  display: block;
+  color: #e86445;
+  font-size: 19px;
+  margin: 8px 0;
+}
+.circle-summary {
+  display: block;
+  color: #6f7f79;
+  font-size: 22px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+.circle-copy .chip {
+  font-size: 17px;
+  margin-right: 8px;
+  padding: 7px 12px;
+}
+
+.circles-hero{background:#dfeaed;position:relative;overflow:hidden}.circles-hero:after{content:"同路";position:absolute;right:-20px;top:18px;color:rgba(31,93,122,.08);font-family:"STKaiti","KaiTi",serif;font-size:132px;font-weight:800}.circles-hero .title,.search{position:relative;z-index:1}.search{border:2px solid #12324a;border-radius:18px;box-shadow:7px 7px 0 #f1b84b}.circle-card{border-radius:20px}.circle-number{border-color:#d9e1e3;color:#d96c4b;font-family:"Arial Narrow",Arial,sans-serif;font-weight:800}.circle-name{font-family:"STKaiti","KaiTi",serif;font-weight:700}.circle-city{color:#d96c4b}.circle-summary{color:#6a7c85}

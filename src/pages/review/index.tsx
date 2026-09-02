@@ -1,0 +1,7 @@
+import Taro,{useLoad} from '@tarojs/taro'
+import { Button, Input, Text, Textarea, View } from '@tarojs/components'
+import { useState } from 'react'
+import { getPlace } from '../../data/places'
+import './index.scss'
+
+export default function Review(){const [id,setId]=useState(''),[rating,setRating]=useState(5),[author,setAuthor]=useState('旅行者'),[content,setContent]=useState('');useLoad(options=>setId(options.id||''));const place=getPlace(id);const submit=()=>{if(content.trim().length<10)return Taro.showToast({title:'至少写 10 个字',icon:'none'});const drafts=Taro.getStorageSync('lvtu-mini-review-drafts')||[];Taro.setStorageSync('lvtu-mini-review-drafts',[{id:Date.now(),placeId:place.id,rating,author,content},...drafts]);Taro.showToast({title:'景评已保存'});setTimeout(()=>Taro.navigateBack(),500)};return <View className='page safe review-form'><Text className='kicker'>REVIEW A PLACE</Text><Text className='title'>评价 {place.name}</Text><Text className='label'>你的评分</Text><View className='rating-picker'>{[1,2,3,4,5].map(value=><Text key={value} onClick={()=>setRating(value)} className={value<=rating?'on':''}>★</Text>)}</View><Text className='label'>显示名称</Text><Input className='field' value={author} maxlength={24} onInput={e=>setAuthor(e.detail.value)} /><Text className='label'>真实体验</Text><Textarea className='field textarea' value={content} maxlength={1000} placeholder='交通、排队、最佳时间、适合谁……具体经验最有帮助。' onInput={e=>setContent(e.detail.value)} /><Text className='hint'>提交正式版前，文字会接入微信内容安全检测。</Text><Button className='primary submit' onClick={submit}>发布景评</Button></View>}

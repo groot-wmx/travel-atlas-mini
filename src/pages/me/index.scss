@@ -1,0 +1,108 @@
+.me-hero {
+  background: #e7efe9;
+  padding-top: 55px;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #174a40;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: serif;
+  font-size: 48px;
+}
+.me-hero .title {
+  display: block;
+  font-size: 46px;
+  margin: 8px 0;
+}
+.me-hero .muted {
+  font-size: 20px;
+}
+.me-main {
+  padding-top: 28px;
+  padding-bottom: 80px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px 12px;
+}
+.stats view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #e3e9e5;
+}
+.stats view:last-child {
+  border: 0;
+}
+.stats text:first-child {
+  font-size: 38px;
+  font-weight: 700;
+}
+.stats text:last-child {
+  color: #7d8c85;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.login {
+  margin: 20px 0 45px;
+}
+.block {
+  display: block;
+  margin: 35px 0 20px;
+}
+.me-row {
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  margin-bottom: 14px;
+}
+.place-thumb {
+  width: 92px;
+  height: 72px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.circle-mark {
+  width: 70px;
+  height: 70px;
+  background: #173c35;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-family: "Songti SC", serif;
+  font-size: 28px;
+}
+.me-row .name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.me-row .muted {
+  font-size: 19px;
+}
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  color: #7d8c85;
+  font-size: 19px;
+  margin: 48px 0;
+}
+.legal text {
+  width: 42%;
+}
+
+/* Modern atlas theme */
+.me-hero{background:#dfeaed;padding-top:58px;padding-bottom:52px}.avatar{background:#12324a;font-family:"STKaiti","KaiTi",serif}.me-main{padding-top:0}.stats{margin-top:-34px;position:relative;padding:28px 12px;box-shadow:0 15px 36px rgba(18,50,74,.1)}.stats text:first-child{color:#12324a;font-weight:800}.login{height:84px;line-height:84px;margin:22px 0 48px}.me-row{border-radius:20px}.circle-mark{background:#1f5d7a;font-family:"STKaiti","KaiTi",serif}

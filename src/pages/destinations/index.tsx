@@ -1,0 +1,7 @@
+import { Input, Text, View } from '@tarojs/components'
+import { useMemo,useState } from 'react'
+import PlaceCard from '../../components/PlaceCard'
+import { places } from '../../data/places'
+import './index.scss'
+
+export default function Destinations(){const [query,setQuery]=useState('');const [scope,setScope]=useState<'全部'|'中国'|'海外'>('全部');const result=useMemo(()=>places.filter(place=>{const match=!query||`${place.name}${place.city}${place.country}${place.tags.join('')}`.toLowerCase().includes(query.toLowerCase());const area=scope==='全部'||(scope==='中国'?place.country==='中国':place.country!=='中国');return match&&area}),[query,scope]);return <View className='page destination-page'><View className='destination-hero safe'><Text className='kicker'>EXPLORE THE WORLD</Text><Text className='title'>从中国出发，{`\n`}收藏全世界。</Text><Text className='muted desc'>找景点、读真实景评，再把心动的地方放进行程。</Text><View className='search'><Text>⌕</Text><Input value={query} onInput={e=>setQuery(e.detail.value)} placeholder='搜索景点、城市或国家' /></View></View><View className='safe destination-body'><View className='scope-row'>{(['全部','中国','海外'] as const).map(item=><View className={`scope ${scope===item?'active':''}`} key={item} onClick={()=>setScope(item)}>{item}</View>)}<Text className='result'>{result.length} 个目的地</Text></View>{result.length?result.map(place=><PlaceCard place={place} key={place.id} />):<View className='empty panel'>没有找到对应目的地，换个关键词试试。</View>}</View></View>}
